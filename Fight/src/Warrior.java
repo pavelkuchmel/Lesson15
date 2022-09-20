@@ -22,4 +22,9 @@ public class Warrior {
     public void takeHit(Warrior w2){
         this.setHp(this.getHp() - w2.damage);
     }
+
+    @Override
+    public String toString() {
+        return name + " has " + hp + " health";  //если не переопределить этот метон, то будет выволдить хэш-код
+    }
 }
